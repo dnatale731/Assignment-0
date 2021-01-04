@@ -1,8 +1,8 @@
 function titleCaseEdit(title) {
   // Insert code here;
   let editedTitle = title.toLowerCase()
-  
   editedTitle = editedTitle.split(" ")
+  
   for(let i = 0; i < editedTitle.length; i++) {
     editedTitle[i] = editedTitle[i].charAt(0).toUpperCase() + editedTitle[i].slice(1);
   }
