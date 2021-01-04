@@ -5,6 +5,22 @@ class MySolution {
 
   binarySearch(nums, target) {
     // Insert code here;
+    if(nums.length === 0) {
+      return false
+    }
+    else {
+      let middle = Math.floor(nums.length / 2)
+      
+      if(nums[middle] === target) {
+        return true
+      }
+      else if(nums[middle] < target) {
+        return this.binarySearch(nums.slice(middle + 1), target)
+      }
+      else if(nums[middle] > target) {
+        return this.binarySearch(nums.slice(0, middle), target)
+      }
+    }
   }
 }
 

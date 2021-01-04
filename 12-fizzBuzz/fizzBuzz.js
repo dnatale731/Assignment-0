@@ -3,7 +3,7 @@ function fizzBuzz(start, end) {
   let array = new Array()
 
   for(let i = start; i <= end; i++) {
-    if(i % 3 == 0){
+    if(i % 3 == 0) {
       if(i % 5 == 0) {
         array.push("FizzBuzz")
       }
@@ -11,7 +11,7 @@ function fizzBuzz(start, end) {
         array.push("Fizz")
       }
     }
-    else if(i % 5 == 0){
+    else if(i % 5 == 0) {
       array.push("Buzz")
     }
     else {
